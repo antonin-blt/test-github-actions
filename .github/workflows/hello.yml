@@ -16,7 +16,7 @@ jobs:
     name: Build Symfony Project
     runs-on: ubuntu-18.04
     steps:
-      - name:  Checkout
+      - name: Checkout
         uses: actions/checkout@v2
       - name: Composer install
         uses: php-actions/composer@v6
