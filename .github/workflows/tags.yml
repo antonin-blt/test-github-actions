@@ -1,0 +1,13 @@
+name: test tags
+on:
+  push:
+    tags:
+      - v*
+jobs:
+  deploy:
+    runs-on: ubuntu-18.04
+    steps:
+      - name: checkout
+        uses: actions/checkout@v2
+      - name: Version
+        run: echo $GITHUB_REF
