@@ -9,3 +9,13 @@ jobs:
         run: |
           echo 'hello world'
           echo 'hello world 2'
+  build:
+    name: Build Symfony Project
+    runs-on: ubuntu-18.04
+    steps:
+      - name:  Checkout
+        uses: actions/checkout@v2
+      - name: Composer install
+        uses: php-actions/composer@v6
+      - name: PHPStan
+        uses: php-actions/phpstan@v3
