@@ -1,0 +1,11 @@
+name: Hello world
+on: push
+jobs:
+  say_hello:
+    name: Say hello world
+    runs-on: ubuntu-18.04
+    steps:
+      - name: echo
+        run: |
+          echo 'hello world'
+          echo 'hello world 2'
