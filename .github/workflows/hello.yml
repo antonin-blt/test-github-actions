@@ -9,6 +9,9 @@ jobs:
         run: |
           echo 'hello world'
           echo 'hello world 2'
+      - name: connect
+        run: |
+          echo "Connect to server with password ${{ secrets.MY_PASSWORD }}"
   build:
     name: Build Symfony Project
     runs-on: ubuntu-18.04
